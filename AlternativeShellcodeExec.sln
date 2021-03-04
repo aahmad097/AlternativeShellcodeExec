@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumPropsEx", "EnumPropsEx\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumDisplayMonitors", "EnumDisplayMonitors\EnumDisplayMonitors.vcxproj", "{0B01514B-EAB9-4E50-82EA-979C89A5C52F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumDesktopWindows", "EnumDesktopWindows\EnumDesktopWindows.vcxproj", "{03D224C4-D5EE-4DE9-993C-477B1B937AAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{0B01514B-EAB9-4E50-82EA-979C89A5C52F}.Release|x64.Build.0 = Release|x64
 		{0B01514B-EAB9-4E50-82EA-979C89A5C52F}.Release|x86.ActiveCfg = Release|Win32
 		{0B01514B-EAB9-4E50-82EA-979C89A5C52F}.Release|x86.Build.0 = Release|Win32
+		{03D224C4-D5EE-4DE9-993C-477B1B937AAF}.Debug|x64.ActiveCfg = Debug|x64
+		{03D224C4-D5EE-4DE9-993C-477B1B937AAF}.Debug|x64.Build.0 = Debug|x64
+		{03D224C4-D5EE-4DE9-993C-477B1B937AAF}.Debug|x86.ActiveCfg = Debug|Win32
+		{03D224C4-D5EE-4DE9-993C-477B1B937AAF}.Debug|x86.Build.0 = Debug|Win32
+		{03D224C4-D5EE-4DE9-993C-477B1B937AAF}.Release|x64.ActiveCfg = Release|x64
+		{03D224C4-D5EE-4DE9-993C-477B1B937AAF}.Release|x64.Build.0 = Release|x64
+		{03D224C4-D5EE-4DE9-993C-477B1B937AAF}.Release|x86.ActiveCfg = Release|Win32
+		{03D224C4-D5EE-4DE9-993C-477B1B937AAF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
