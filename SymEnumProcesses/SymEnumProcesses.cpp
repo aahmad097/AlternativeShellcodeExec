@@ -3,14 +3,6 @@
 #include <stdio.h>
 
 
-int err(const char* errmsg) {
-
-
-    printf("Error: %s (%u)\n", errmsg, ::GetLastError());
-    return 1;
-
-}
-
 // Requires Dbghelp.lib 
 
 // alfarom256 calc shellcode
