@@ -41,12 +41,6 @@ int main() {
 	LPVOID addr = ::VirtualAlloc(NULL, sizeof(op), MEM_COMMIT, PAGE_EXECUTE_READWRITE);
 	::RtlMoveMemory(addr, op, sizeof(op));
 
-
-
-	HANDLE timer;
-	HANDLE queue = ::CreateTimerQueue();
-	HANDLE gDoneEvent = ::CreateEvent(NULL, TRUE, FALSE, NULL);
-
     ::EnumDesktopsW(GetProcessWindowStation(), (DESKTOPENUMPROCW)addr, NULL);
 
 
