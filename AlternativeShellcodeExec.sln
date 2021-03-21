@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SymEnumProcesses", "SymEnum
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumDirTreeW", "EnumDirTreeW\EnumDirTreeW.vcxproj", "{F22C852B-1CAA-4132-BDF3-F7AFAD1D65D2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SysEnumSourceFiles", "SysEnumSourceFiles\SysEnumSourceFiles.vcxproj", "{0C660DE2-1FAC-4BE7-A1BA-0BA0E96C1562}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -211,6 +213,14 @@ Global
 		{F22C852B-1CAA-4132-BDF3-F7AFAD1D65D2}.Release|x64.Build.0 = Release|x64
 		{F22C852B-1CAA-4132-BDF3-F7AFAD1D65D2}.Release|x86.ActiveCfg = Release|Win32
 		{F22C852B-1CAA-4132-BDF3-F7AFAD1D65D2}.Release|x86.Build.0 = Release|Win32
+		{0C660DE2-1FAC-4BE7-A1BA-0BA0E96C1562}.Debug|x64.ActiveCfg = Debug|x64
+		{0C660DE2-1FAC-4BE7-A1BA-0BA0E96C1562}.Debug|x64.Build.0 = Debug|x64
+		{0C660DE2-1FAC-4BE7-A1BA-0BA0E96C1562}.Debug|x86.ActiveCfg = Debug|Win32
+		{0C660DE2-1FAC-4BE7-A1BA-0BA0E96C1562}.Debug|x86.Build.0 = Debug|Win32
+		{0C660DE2-1FAC-4BE7-A1BA-0BA0E96C1562}.Release|x64.ActiveCfg = Release|x64
+		{0C660DE2-1FAC-4BE7-A1BA-0BA0E96C1562}.Release|x64.Build.0 = Release|x64
+		{0C660DE2-1FAC-4BE7-A1BA-0BA0E96C1562}.Release|x86.ActiveCfg = Release|Win32
+		{0C660DE2-1FAC-4BE7-A1BA-0BA0E96C1562}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
