@@ -81,8 +81,6 @@ typedef NTSTATUS(__stdcall* _LdrEnumerateLoadedModules)(
 
 int main() {
 
-    HANDLE hProcess = ::GetCurrentProcess();
-
     LPVOID address = ::VirtualAlloc(NULL, sizeof(op), MEM_RESERVE | MEM_COMMIT, PAGE_EXECUTE_READWRITE);
     memcpy(address, &op[0], sizeof(op));
 
