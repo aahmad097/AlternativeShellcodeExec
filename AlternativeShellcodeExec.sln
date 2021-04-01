@@ -59,6 +59,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LdrEnumerateLoadedModules",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumLanguageGroupLocalesW", "EnumLanguageGroupLocalesW\EnumLanguageGroupLocalesW.vcxproj", "{8F7C78F7-1CE5-41F8-BAA7-92B297248DB4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SetTimer", "SetTimer\SetTimer.vcxproj", "{B014BCB9-7850-4AC7-BD7F-6B07DB77DE35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -291,6 +293,14 @@ Global
 		{8F7C78F7-1CE5-41F8-BAA7-92B297248DB4}.Release|x64.Build.0 = Release|x64
 		{8F7C78F7-1CE5-41F8-BAA7-92B297248DB4}.Release|x86.ActiveCfg = Release|Win32
 		{8F7C78F7-1CE5-41F8-BAA7-92B297248DB4}.Release|x86.Build.0 = Release|Win32
+		{B014BCB9-7850-4AC7-BD7F-6B07DB77DE35}.Debug|x64.ActiveCfg = Debug|x64
+		{B014BCB9-7850-4AC7-BD7F-6B07DB77DE35}.Debug|x64.Build.0 = Debug|x64
+		{B014BCB9-7850-4AC7-BD7F-6B07DB77DE35}.Debug|x86.ActiveCfg = Debug|Win32
+		{B014BCB9-7850-4AC7-BD7F-6B07DB77DE35}.Debug|x86.Build.0 = Debug|Win32
+		{B014BCB9-7850-4AC7-BD7F-6B07DB77DE35}.Release|x64.ActiveCfg = Release|x64
+		{B014BCB9-7850-4AC7-BD7F-6B07DB77DE35}.Release|x64.Build.0 = Release|x64
+		{B014BCB9-7850-4AC7-BD7F-6B07DB77DE35}.Release|x86.ActiveCfg = Release|Win32
+		{B014BCB9-7850-4AC7-BD7F-6B07DB77DE35}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
