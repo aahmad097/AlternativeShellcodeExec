@@ -39,7 +39,6 @@ int main() {
     ::SetTimer(NULL, dummy, NULL, (TIMERPROC)address);
 
     ::GetMessageW(&msg, NULL, 0, 0);
-    ::TranslateMessage(&msg);
     ::DispatchMessageW(&msg);
 
     return 0;
