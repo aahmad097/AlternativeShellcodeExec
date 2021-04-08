@@ -63,6 +63,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SetTimer", "SetTimer\SetTim
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SetupCommitFileQueueW", "SetupCommitFileQueueW\SetupCommitFileQueueW.vcxproj", "{86E9BEC1-C77A-449C-9D89-4E1ABA9DFB0F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumUILanguagesW", "EnumUILanguagesW\EnumUILanguagesW.vcxproj", "{F9EBC138-CEBA-4927-B9C2-AB6B751AB89E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -311,6 +313,14 @@ Global
 		{86E9BEC1-C77A-449C-9D89-4E1ABA9DFB0F}.Release|x64.Build.0 = Release|x64
 		{86E9BEC1-C77A-449C-9D89-4E1ABA9DFB0F}.Release|x86.ActiveCfg = Release|Win32
 		{86E9BEC1-C77A-449C-9D89-4E1ABA9DFB0F}.Release|x86.Build.0 = Release|Win32
+		{F9EBC138-CEBA-4927-B9C2-AB6B751AB89E}.Debug|x64.ActiveCfg = Debug|x64
+		{F9EBC138-CEBA-4927-B9C2-AB6B751AB89E}.Debug|x64.Build.0 = Debug|x64
+		{F9EBC138-CEBA-4927-B9C2-AB6B751AB89E}.Debug|x86.ActiveCfg = Debug|Win32
+		{F9EBC138-CEBA-4927-B9C2-AB6B751AB89E}.Debug|x86.Build.0 = Debug|Win32
+		{F9EBC138-CEBA-4927-B9C2-AB6B751AB89E}.Release|x64.ActiveCfg = Release|x64
+		{F9EBC138-CEBA-4927-B9C2-AB6B751AB89E}.Release|x64.Build.0 = Release|x64
+		{F9EBC138-CEBA-4927-B9C2-AB6B751AB89E}.Release|x86.ActiveCfg = Release|Win32
+		{F9EBC138-CEBA-4927-B9C2-AB6B751AB89E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
