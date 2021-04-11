@@ -67,6 +67,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumUILanguagesW", "EnumUIL
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumSystemLocales", "EnumSystemLocales\EnumSystemLocales.vcxproj", "{C9CDA752-24AF-48CC-9F54-A695A453A929}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumPwrSchemes", "EnumPwrSchemes\EnumPwrSchemes.vcxproj", "{13291D07-600D-44D2-91F8-A1FEF83AB0FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -331,6 +333,14 @@ Global
 		{C9CDA752-24AF-48CC-9F54-A695A453A929}.Release|x64.Build.0 = Release|x64
 		{C9CDA752-24AF-48CC-9F54-A695A453A929}.Release|x86.ActiveCfg = Release|Win32
 		{C9CDA752-24AF-48CC-9F54-A695A453A929}.Release|x86.Build.0 = Release|Win32
+		{13291D07-600D-44D2-91F8-A1FEF83AB0FD}.Debug|x64.ActiveCfg = Debug|x64
+		{13291D07-600D-44D2-91F8-A1FEF83AB0FD}.Debug|x64.Build.0 = Debug|x64
+		{13291D07-600D-44D2-91F8-A1FEF83AB0FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{13291D07-600D-44D2-91F8-A1FEF83AB0FD}.Debug|x86.Build.0 = Debug|Win32
+		{13291D07-600D-44D2-91F8-A1FEF83AB0FD}.Release|x64.ActiveCfg = Release|x64
+		{13291D07-600D-44D2-91F8-A1FEF83AB0FD}.Release|x64.Build.0 = Release|x64
+		{13291D07-600D-44D2-91F8-A1FEF83AB0FD}.Release|x86.ActiveCfg = Release|Win32
+		{13291D07-600D-44D2-91F8-A1FEF83AB0FD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
