@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumPwrSchemes", "EnumPwrSc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumResourceTypesExW", "EnumResourceTypesExW\EnumResourceTypesExW.vcxproj", "{D0AB9F7D-C35D-4E4F-840A-34597B466E1A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImmEnumInputContext", "ImmEnumInputContext\ImmEnumInputContext.vcxproj", "{13C7FED8-77A0-4EE3-A431-6E77F22320C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -351,6 +353,14 @@ Global
 		{D0AB9F7D-C35D-4E4F-840A-34597B466E1A}.Release|x64.Build.0 = Release|x64
 		{D0AB9F7D-C35D-4E4F-840A-34597B466E1A}.Release|x86.ActiveCfg = Release|Win32
 		{D0AB9F7D-C35D-4E4F-840A-34597B466E1A}.Release|x86.Build.0 = Release|Win32
+		{13C7FED8-77A0-4EE3-A431-6E77F22320C3}.Debug|x64.ActiveCfg = Debug|x64
+		{13C7FED8-77A0-4EE3-A431-6E77F22320C3}.Debug|x64.Build.0 = Debug|x64
+		{13C7FED8-77A0-4EE3-A431-6E77F22320C3}.Debug|x86.ActiveCfg = Debug|Win32
+		{13C7FED8-77A0-4EE3-A431-6E77F22320C3}.Debug|x86.Build.0 = Debug|Win32
+		{13C7FED8-77A0-4EE3-A431-6E77F22320C3}.Release|x64.ActiveCfg = Release|x64
+		{13C7FED8-77A0-4EE3-A431-6E77F22320C3}.Release|x64.Build.0 = Release|x64
+		{13C7FED8-77A0-4EE3-A431-6E77F22320C3}.Release|x86.ActiveCfg = Release|Win32
+		{13C7FED8-77A0-4EE3-A431-6E77F22320C3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
