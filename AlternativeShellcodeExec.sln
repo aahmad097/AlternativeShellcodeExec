@@ -77,6 +77,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumFontsW", "EnumFontsW\En
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumFontFamiliesW", "EnumFontFamiliesW\EnumFontFamiliesW.vcxproj", "{383AB5C3-DDA6-49AA-B3AC-4F8A63CC7460}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnumFontFamiliesExW", "EnumFontFamiliesExW\EnumFontFamiliesExW.vcxproj", "{F169F79E-D307-4EA9-818D-8C8FF5B7138D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -381,6 +383,14 @@ Global
 		{383AB5C3-DDA6-49AA-B3AC-4F8A63CC7460}.Release|x64.Build.0 = Release|x64
 		{383AB5C3-DDA6-49AA-B3AC-4F8A63CC7460}.Release|x86.ActiveCfg = Release|Win32
 		{383AB5C3-DDA6-49AA-B3AC-4F8A63CC7460}.Release|x86.Build.0 = Release|Win32
+		{F169F79E-D307-4EA9-818D-8C8FF5B7138D}.Debug|x64.ActiveCfg = Debug|x64
+		{F169F79E-D307-4EA9-818D-8C8FF5B7138D}.Debug|x64.Build.0 = Debug|x64
+		{F169F79E-D307-4EA9-818D-8C8FF5B7138D}.Debug|x86.ActiveCfg = Debug|Win32
+		{F169F79E-D307-4EA9-818D-8C8FF5B7138D}.Debug|x86.Build.0 = Debug|Win32
+		{F169F79E-D307-4EA9-818D-8C8FF5B7138D}.Release|x64.ActiveCfg = Release|x64
+		{F169F79E-D307-4EA9-818D-8C8FF5B7138D}.Release|x64.Build.0 = Release|x64
+		{F169F79E-D307-4EA9-818D-8C8FF5B7138D}.Release|x86.ActiveCfg = Release|Win32
+		{F169F79E-D307-4EA9-818D-8C8FF5B7138D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
